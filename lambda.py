@@ -34,7 +34,7 @@ def lambda_handler(event, context):
     email_body = f"Click this link to verify your email: {verification_link}. This link expires in 2 minutes."
 
     ses_client.send_email(
-        Source="no-reply@yourdomain.com",
+        Source="no-reply@harshshahjigar.me",
         Destination={'ToAddresses': [email]},
         Message={
             'Subject': {'Data': email_subject},
